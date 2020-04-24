@@ -26,9 +26,11 @@
     "bootstrap": "^4.3.1",
     "core-js": "^3.3.3",
     "jquery": "3.4.1",
+    "ng2-toasty": "^4.0.3",
     "oidc-client": "^1.9.1",
     "popper.js": "^1.16.0",
     "rxjs": "^6.5.3",
+    "rxjs-compat": "^6.5.5",
     "zone.js": "0.10.3"
   },
   "devDependencies": {

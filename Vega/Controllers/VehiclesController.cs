@@ -32,6 +32,8 @@ namespace Vega.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateVehicle(VehicleResource vehicleResource)
         {
+            throw new Exception();
+
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
@@ -46,7 +48,6 @@ namespace Vega.Controllers
             vehicle.LastUpdate = DateTime.Now;
             repository.Add(vehicle);
             await unitOfWork.CompleteAsync();
-
 
             vehicle = await repository.GetVehicles(vehicle.Id);
 
